@@ -1,0 +1,689 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        .bg-success {
+            background-color: rgb(70 180 173) !important;
+        }
+
+        .transparent-card {
+            background-color: rgba(255, 255, 255, 0.5);
+            /* لون خلفية شفاف */
+            border-top: 2px solid rgb(70 180 173);
+            /* لون الحدود من الأعلى */
+
+        }
+
+        .bd-teal-100 {
+            color: #000;
+            background-color: #d2f4ea86;
+        }
+
+        .color-success {
+            color: rgb(70 180 173);
+            background-color: white;
+        }
+
+        .list-group-item.active {
+            z-index: 2;
+            color: rgb(70 180 173) !important;
+            background-color: white;
+            border: 2px solid white;
+        }
+    </style>
+
+
+</head>
+
+<body>
+    <header>
+
+        <div class=" bg-success d-flex justify-content-between text-light  py-3 pb-2 px-5">
+            <div class="d-flex ">
+                <div class=" pe-2  px-5"> <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                        fill="currentColor" class="bi bi-clock-fill" viewBox="0 0 16 16">
+                        <path
+                            d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0M8 3.5a.5.5 0 0 0-1 0V9a.5.5 0 0 0 .252.434l3.5 2a.5.5 0 0 0 .496-.868L8 8.71z" />
+                    </svg></div>
+
+                <div>
+                    <p> Monday-Saturday 8AM toPM </p>
+                </div>
+            </div>
+            <div class="d-flex  pe-5">
+                <div class="pe-1 "><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                        class="bi bi-phone-fill" viewBox="0 0 16 16">
+                        <path
+                            d="M3 2a2 2 0 0 1 2-2h6a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2zm6 11a1 1 0 1 0-2 0 1 1 0 0 0 2 0" />
+                    </svg></div>
+                <div> Call Us +1 55895548855
+                </div>
+            </div>
+        </div>
+        <!-- nav -->
+        <nav class="navbar navbar-expand-lg bg-body-tertiary px-4">
+            <div class="container-fluid d-flex justify-content-around px-4">
+                <img src="./image/logo.png" alt="" width="170px" class="ps-5">
+                <button class="navbar-toggler mx-1" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse pe-5">
+                    <ul class="navbar-nav mb-2 mb-lg-0 ms-auto"> <!-- استخدمنا ms-auto هنا لتحريك الـ ul إلى اليمين -->
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#"
+                                style="color:rgb(70 180 173) ;">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">SERVICE</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">DEPARTMWNTS</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">DOCTORS</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                DROPDOWN
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">Action</a></li>
+                                <li><a class="dropdown-item" href="#">Another action</a></li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li><a class="dropdown-item" href="#">Something else here</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <button type="button" class="btn  bg-success text-light">Mame an Appointment</button>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+    </header>
+
+    <!--  -->
+    <main>
+        <div id="carouselExampleCaptions" class="carousel slide">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+                    aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+                    aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+                    aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+                <div class="carousel-item ">
+                    <img src="./image/hero-carousel-1.jpg" class="d-block w-100" alt="...">
+                    <div class="carousel-caption d-flex justify-content-center align-items-center h-100  ">
+                        <div class="card transparent-card py-3 ">
+                            <h5 class="card-title">First slide label</h5>
+                            <p class="card-text">Some representative placeholder content for the first slide </p>
+                            <div> <button type="button" class="btn  border bg-success text-light">Read More</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item active">
+                    <img src="./image/hero-carousel-2.jpg" class="d-block w-100" alt="...">
+                    <div class="carousel-caption d-flex justify-content-center align-items-center h-100  ">
+                        <div class="card transparent-card py-3 ">
+                            <h5 class="card-title">Temporibus autem quibusdam</h5>
+                            <p class="card-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Asperiores
+                                quidem explicabo itaque rerum, enim eos exercitationem ut vitae iusto pariatur
+                                doloremque necessitatibus veritatis ad, accusantium id quisquam minus sint corporis.
+                                Natus aperiam eius provident impedit? </p>
+                            <div> <button type="button" class="btn  border bg-success text-light">Read More</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="./image/hero-carousel-3.jpg" class="d-block w-100" alt="...">
+                    <div class="carousel-caption d-flex justify-content-center align-items-center h-100  ">
+                        <div class="card transparent-card py-3 ">
+                            <h5 class="card-title">Third slide label</h5>
+                            <p class="card-text">Some representative placeholder content for the third slide. </p>
+                            <div> <button type="button" class="btn  border bg-success text-light">Read More</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+
+        </div>
+
+
+        <div class="my-5 w-40 ">
+            <div class="w-40 my-4">
+                <h2 class="my-4 text-center">Service</h2>
+
+            </div>
+            <div class="d-flex justify-content-center  align-items-center ">
+                <div class="border-bottom  border-success border-3  w-25 "> </div>
+            </div>
+            <!-- <div class="d-flex justify-content-center  align-items-center ">
+                <div class="border-bottom  border-success   w-25 "> </div>
+            </div> -->
+            <p class="text-center py-3">Necessitatibus eius consequatur ex aliquid fuga eum quidem sint consectetur
+                velit</p>
+        </div>
+
+
+        <!-- <div class="my-5 w-40 text-center">
+            <h2 class="my-4">
+                <span class="border-bottom border-danger">Service</span>
+            </h2>
+           
+
+        </div>
+
+        <div class="container mt-5">
+            <h1>هذا نص <u class="text-decoration-underline ">تحت كلمة</u> باستخدام Bootstrap</h1>
+        </div> -->
+
+
+        <!-- </div>
+            <div class="w-20 h-1 border-primary"></div> -->
+
+        <!--  -->
+
+        <div class="px-4 my-4">
+            <div class="row">
+                <div class="col-lg-4 my-2">
+                    <div class="card-body">
+                        <div class="card-body text-center ">
+
+
+                            <div class=" rounded-circle  ">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="rgb(70, 180, 173)"
+                                    class="bi bi-heart-pulse  rounded-circle shadow-lg w-25 " viewBox="0 0 16 16">
+                                    <path
+                                        d="m8 2.748-.717-.737C5.6.281 2.514.878 1.4 3.053.918 3.995.78 5.323 1.508 7H.43c-2.128-5.697 4.165-8.83 7.394-5.857q.09.083.176.171a3 3 0 0 1 .176-.17c3.23-2.974 9.522.159 7.394 5.856h-1.078c.728-1.677.59-3.005.108-3.947C13.486.878 10.4.28 8.717 2.01zM2.212 10h1.315C4.593 11.183 6.05 12.458 8 13.795c1.949-1.337 3.407-2.612 4.473-3.795h1.315c-1.265 1.566-3.14 3.25-5.788 5-2.648-1.75-4.523-3.434-5.788-5" />
+                                    <path
+                                        d="M10.464 3.314a.5.5 0 0 0-.945.049L7.921 8.956 6.464 5.314a.5.5 0 0 0-.88-.091L3.732 8H.5a.5.5 0 0 0 0 1H4a.5.5 0 0 0 .416-.223l1.473-2.209 1.647 4.118a.5.5 0 0 0 .945-.049l1.598-5.593 1.457 3.642A.5.5 0 0 0 12 9h3.5a.5.5 0 0 0 0-1h-3.162z" />
+                                </svg>
+                            </div>
+                            <h5 class="card-title py-3"> Cor Health
+                            </h5>
+                            <div class="d-flex justify-content-center  align-items-center ">
+                                <div class="border-bottom  border-success border-3  w-25 "> </div>
+                            </div>
+                            <p class="card-text py-3">
+                                Lorem ipsum dolor sit amet consectetur adipisicing
+                                elit sit amet consectetur adipisicing elit..
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <!--  -->
+                <div class="col-lg-4 my-2">
+                    <div class="card-body">
+                        <div class="card-body text-center ">
+
+
+                            <div class=" rounded-circle  ">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="rgb(70, 180, 173"
+                                    class="bi bi-lungs-fill  rounded-circle shadow-lg w-25" viewBox="0 0 16 16">
+                                    <path
+                                        d="M8 1a.5.5 0 0 1 .5.5v5.243L9 7.1V4.72C9 3.77 9.77 3 10.72 3c.524 0 1.023.27 1.443.592.431.332.847.773 1.216 1.229.736.908 1.347 1.946 1.58 2.48.176.405.393 1.16.556 2.011.165.857.283 1.857.24 2.759-.04.867-.232 1.79-.837 2.33-.67.6-1.622.556-2.741-.004l-1.795-.897A2.5 2.5 0 0 1 9 11.264V8.329l-1-.715-1 .715V7.214c-.1 0-.202.03-.29.093l-2.5 1.786a.5.5 0 1 0 .58.814L7 8.329v2.935A2.5 2.5 0 0 1 5.618 13.5l-1.795.897c-1.12.56-2.07.603-2.741.004-.605-.54-.798-1.463-.838-2.33-.042-.902.076-1.902.24-2.759.164-.852.38-1.606.558-2.012.232-.533.843-1.571 1.579-2.479.37-.456.785-.897 1.216-1.229C4.257 3.27 4.756 3 5.28 3 6.23 3 7 3.77 7 4.72V7.1l.5-.357V1.5A.5.5 0 0 1 8 1m3.21 8.907a.5.5 0 1 0 .58-.814l-2.5-1.786A.5.5 0 0 0 9 7.214V8.33z" />
+                                </svg>
+                            </div>
+                            <h5 class="card-title py-3"> Pulmonum Health
+
+                            </h5>
+                            <div class="d-flex justify-content-center  align-items-center ">
+                                <div class="border-bottom  border-success border-3  w-25 "> </div>
+                            </div>
+                            <p class="card-text py-3">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit sit amet consectetur adipisicing
+                                elit..
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <!--  -->
+                <div class="col-lg-4 my-2">
+                    <div class="card-body">
+                        <div class="card-body text-center ">
+
+                            <div class="">
+                                <div class="    ">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50"
+                                        fill="rgb(70, 180, 173)" class="bi bi-lungs-fill  rounded-circle shadow-lg w-25"
+                                        viewBox="0 0 16 16">
+                                        <path
+                                            d="M8 1a.5.5 0 0 1 .5.5v5.243L9 7.1V4.72C9 3.77 9.77 3 10.72 3c.524 0 1.023.27 1.443.592.431.332.847.773 1.216 1.229.736.908 1.347 1.946 1.58 2.48.176.405.393 1.16.556 2.011.165.857.283 1.857.24 2.759-.04.867-.232 1.79-.837 2.33-.67.6-1.622.556-2.741-.004l-1.795-.897A2.5 2.5 0 0 1 9 11.264V8.329l-1-.715-1 .715V7.214c-.1 0-.202.03-.29.093l-2.5 1.786a.5.5 0 1 0 .58.814L7 8.329v2.935A2.5 2.5 0 0 1 5.618 13.5l-1.795.897c-1.12.56-2.07.603-2.741.004-.605-.54-.798-1.463-.838-2.33-.042-.902.076-1.902.24-2.759.164-.852.38-1.606.558-2.012.232-.533.843-1.571 1.579-2.479.37-.456.785-.897 1.216-1.229C4.257 3.27 4.756 3 5.28 3 6.23 3 7 3.77 7 4.72V7.1l.5-.357V1.5A.5.5 0 0 1 8 1m3.21 8.907a.5.5 0 1 0 .58-.814l-2.5-1.786A.5.5 0 0 0 9 7.214V8.33z" />
+                                    </svg>
+                                </div>
+                            </div>
+                            <h5 class="card-title py-3">Cerebrum Health
+                            </h5>
+                            <div class="d-flex justify-content-center  align-items-center ">
+                                <div class="border-bottom  border-success border-3  w-25 "> </div>
+                            </div>
+                            <p class="card-text py-3">Lorem ipsum dolor sit amet consectetur adipisicing elit sit amet
+                                consectetur adipisicing elit..
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <!--  -->
+        <div class="px-4 my-4">
+            <div class="row">
+                <div class="col-lg-4 my-2">
+                    <div class="card-body">
+                        <div class="card-body text-center ">
+
+
+                            <div class=" rounded-circle  ">
+                                <svg xmlns="http://www.w3.org/2000/svg" height="50" width="50"
+                                    class="bi bi-lungs-fill  rounded-circle shadow-lg w-25"
+                                    viewBox="0 0 448 512"><!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
+                                    <path fill="#46b4ad"
+                                        d="M186.1 52.1C169.3 39.1 148.7 32 127.5 32C74.7 32 32 74.7 32 127.5l0 6.2c0 15.8 3.7 31.3 10.7 45.5l23.5 47.1c4.5 8.9 7.6 18.4 9.4 28.2l36.7 205.8c2 11.2 11.6 19.4 22.9 19.8s21.4-7.4 24-18.4l28.9-121.3C192.2 323.7 207 312 224 312s31.8 11.7 35.8 28.3l28.9 121.3c2.6 11.1 12.7 18.8 24 18.4s20.9-8.6 22.9-19.8l36.7-205.8c1.8-9.8 4.9-19.3 9.4-28.2l23.5-47.1c7.1-14.1 10.7-29.7 10.7-45.5l0-2.1c0-55-44.6-99.6-99.6-99.6c-24.1 0-47.4 8.8-65.6 24.6l-3.2 2.8 19.5 15.2c7 5.4 8.2 15.5 2.8 22.5s-15.5 8.2-22.5 2.8l-24.4-19-37-28.8z" />
+                                </svg>
+                            </div>
+                            <h5 class="card-title py-3">Dentalis Cura
+
+                            </h5>
+                            <div class="d-flex justify-content-center  align-items-center ">
+                                <div class="border-bottom  border-success border-3  w-25 "> </div>
+                            </div>
+                            <p class="card-text py-3">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit sit amet consectetur adipisicing
+                                elit.. </p>
+                        </div>
+                    </div>
+                </div>
+                <!--  -->
+                <div class="col-lg-4 my-2">
+                    <div class="card-body">
+                        <div class="card-body text-center ">
+
+
+                            <div class=" rounded-circle  ">
+                                <svg xmlns="http://www.w3.org/2000/svg"
+                                    class="bi bi-lungs-fill  rounded-circle shadow-lg w-25" viewBox="0 0 576 512"
+                                    height="50"
+                                    width="50"><!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
+                                    <path fill="#46b4ad"
+                                        d="M142.4 21.9c5.6 16.8-3.5 34.9-20.2 40.5L96 71.1 96 192c0 53 43 96 96 96s96-43 96-96l0-120.9-26.1-8.7c-16.8-5.6-25.8-23.7-20.2-40.5s23.7-25.8 40.5-20.2l26.1 8.7C334.4 19.1 352 43.5 352 71.1L352 192c0 77.2-54.6 141.6-127.3 156.7C231 404.6 278.4 448 336 448c61.9 0 112-50.1 112-112l0-70.7c-28.3-12.3-48-40.5-48-73.3c0-44.2 35.8-80 80-80s80 35.8 80 80c0 32.8-19.7 61-48 73.3l0 70.7c0 97.2-78.8 176-176 176c-92.9 0-168.9-71.9-175.5-163.1C87.2 334.2 32 269.6 32 192L32 71.1c0-27.5 17.6-52 43.8-60.7l26.1-8.7c16.8-5.6 34.9 3.5 40.5 20.2zM480 224a32 32 0 1 0 0-64 32 32 0 1 0 0 64z" />
+                                </svg>
+                            </div>
+                            <h5 class="card-title py-3"> Generalis Health
+
+
+                            </h5>
+                            <div class="d-flex justify-content-center  align-items-center ">
+                                <div class="border-bottom  border-success border-3  w-25 "> </div>
+                            </div>
+                            <p class="card-text py-3">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit sit amet consectetur adipisicing
+                                elit...
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <!--  -->
+                <div class="col-lg-4 my-2">
+                    <div class="card-body">
+                        <div class="card-body text-center ">
+
+
+                            <div class=" rounded-circle  ">
+                                <svg xmlns="http://www.w3.org/2000/svg"
+                                    class="bi bi-lungs-fill  rounded-circle shadow-lg w-25" viewBox="0 0 576 512"
+                                    height="50"
+                                    width="50"><!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
+                                    <path fill="#46b4ad"
+                                        d="M64 144c0-26.5 21.5-48 48-48s48 21.5 48 48l0 112-96 0 0-112zM0 144L0 368c0 61.9 50.1 112 112 112s112-50.1 112-112l0-178.4c1.8 19.1 8.2 38 19.8 54.8L372.3 431.7c35.5 51.7 105.3 64.3 156 28.1s63-107.5 27.5-159.2L427.3 113.3C391.8 61.5 321.9 49 271.3 85.2c-28 20-44.3 50.8-47.3 83l0-24.2c0-61.9-50.1-112-112-112S0 82.1 0 144zm296.6 64.2c-16-23.3-10-55.3 11.9-71c21.2-15.1 50.5-10.3 66 12.2l67 97.6L361.6 303l-65-94.8zM491 407.7c-.8 .6-1.6 1.1-2.4 1.6l4-2.8c-.5 .4-1 .8-1.6 1.2z" />
+                                </svg>
+                            </div>
+                            <h5 class="card-title py-3">Pharmacy
+
+                            </h5>
+                            <div class="d-flex justify-content-center  align-items-center ">
+                                <div class="border-bottom  border-success border-3  w-25 "> </div>
+                            </div>
+                            <p class="card-text py-3">Lorem ipsum dolor sit amet consectetur adipisicing elit sit amet
+                                consectetur adipisicing elit..
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <div class="bd-teal-100">
+            <div class=" text-center ">
+
+                <h2>MAKE AN APPOINTMENT
+                </h2>
+                <div class="d-flex justify-content-center  align-items-center ">
+                    <div class="border-bottom  border-success border-3   py-2 w-25 "> </div>
+                </div>
+                <p class="py-2 ">Necessitatibus eius consequatur ex aliquid fuga eum quidem sint consectetur velit
+                </p>
+            </div>
+            <div class="  py-5 px-4">
+                <div class="ps-3 ">
+                    <div class="d-flex justify-content-around">
+                        <div class="w-25 "> <input type="text" class="form-control col-lg-4 w-100 "
+                                placeholder="Your Name">
+                        </div>
+                        <div class="w-25"> <input type="email" class="form-control col-lg-4" id="formControlInput"
+                                placeholder="Your Email">
+                        </div>
+                        <div class="w-25 "><input type="text" class="form-control col-lg-4" placeholder="YourPhone ">
+                        </div>
+                    </div>
+                </div>
+                <div class="ps-3">
+                    <div class="d-flex justify-content-around py-3">
+                        <div class="w-25"> <input type="text" class="form-control col-lg-4 w-100"
+                                placeholder="Your Name">
+                        </div>
+                        <div class="w-25"> <select class="form-select" aria-label="Default select">
+                                <option selected="">Open this select menu</option>
+                                <option value="1">One</option>
+                                <option value="2">Two</option>
+                                <option value="3">Three</option>
+                            </select></div>
+                        <div class="w-25"><select class="form-select" aria-label="Default select">
+                                <option selected="">Open this select menu</option>
+                                <option value="1">One</option>
+                                <option value="2">Two</option>
+                                <option value="3">Three</option>
+                            </select></div>
+                    </div>
+
+                </div>
+
+                <div class="ps-3 pe-3">
+                    <div class="px-5">
+                        <textarea class="form-control mx-2" id="exampleFormControlTextarea1" rows="3"></textarea>
+                    </div>
+                </div>
+                <div class="text-center py-3"> <button type="button" class="btn  border bg-success text-light">Make an
+                        Appointment</button>
+                </div>
+            </div>
+        </div>
+
+
+        <!--  -->
+        <!-- شاشات صغيرة -->
+        <!--  -->
+        <div class="container ps-3">
+            <div class="position-relative py-5">
+                <div class="row">
+                    <!-- قائمة التبويبات -->
+                    <div class="col-12 col-lg-4 ps-5">
+                        <div class="list-group" id="list-tab" role="tablist">
+                            <a class="list-group-item border border-white py-3 list-group-item-action "
+                                id="list-cardiology-list" data-bs-toggle="list" href="#list-cardiology" role="tab"
+                                aria-controls="cardiology">Cardiology</a>
+                            <a class="list-group-item border border-white py-3 list-group-item-action"
+                                id="list-neurology-list" data-bs-toggle="list" href="#list-neurology" role="tab"
+                                aria-controls="neurology">Neurology</a>
+                            <a class="list-group-item border border-white py-3 list-group-item-action active"
+                                id="list-orthopedics-list" data-bs-toggle="list" href="#list-orthopedics" role="tab"
+                                aria-controls="orthopedics">Hebatology</a>
+                            <a class="list-group-item border border-white py-3 list-group-item-action"
+                                id="list-settings-list" data-bs-toggle="list" href="#list-Pediatrics" role="tab"
+                                aria-controls="settings">Pediatrics</a>
+                            <a class="list-group-item border border-white py-3 list-group-item-action"
+                                id="list-settings-list" data-bs-toggle="list" href="#list-Ophthalmologists" role="tab"
+                                aria-controls="settings">Ophthalmologists</a>
+
+                        </div>
+                    </div>
+
+                    <!-- محتوى التبويبات -->
+                    <div class="col-12 col-lg-8">
+                        <div class="tab-content position-relative" id="list-nav-tabContent">
+
+                            <!-- بطاقة Cardiology -->
+                            <div class="tab-pane fade " id="list-cardiology" role="tabpanel"
+                                aria-labelledby="list-cardiology-list">
+                                <div class="card shadow-lg">
+                                    <div class="row g-0">
+                                        <div class="col-12 col-sm-8">
+                                            <div class="card-body">
+                                                <h5 class="card-title">Cardiology</h5>
+                                                <p class="card-text">Vesicula hepatologia, arbor biliaria, et pancreas.
+                                                </p>
+                                                <p class="card-text"><small class="text-muted">
+                                                        Hepatologists Lorem ipsum dolor sit amet consectetur adipisicing
+                                                        elit.
+                                                        Assumenda ab fugit porro est quibusdam ipsum inventore iste
+                                                        culpa,
+                                                        suscipit debitis aliquid.
+                                                    </small></p>
+                                            </div>
+                                        </div>
+                                        <div class="col-12 col-sm-4">
+                                            <img src="./image/departments-1.jpg" class="img-fluid w-100"
+                                                alt="صورة لقسم القلب">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- بطاقة Neurology -->
+                            <div class="tab-pane fade" id="list-neurology" role="tabpanel"
+                                aria-labelledby="list-neurology-list">
+                                <div class="card shadow-lg">
+                                    <div class="row g-0">
+                                        <div class="col-12 col-sm-8">
+                                            <div class="card-body">
+                                                <h5 class="card-title">Neurology</h5>
+                                                <p class="card-text">Information about neurology.</p>
+                                                <p class="card-text"><small class="text-muted">Details about neurology
+                                                        specialists.</small></p>
+                                            </div>
+                                        </div>
+                                        <div class="col-12 col-sm-4"> <img src="./image/departments-2.jpg"
+                                                class="img-fluid w-100" alt="صورة لقسم الأعصاب">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- بطاقة Orthopedics -->
+                            <div class="tab-pane fade show active" id="list-orthopedics" role="tabpanel"
+                                aria-labelledby="list-orthopedics-list">
+                                <div class="card shadow-lg">
+                                    <div class="row g-0">
+                                        <div class="col-12 col-sm-8">
+                                            <div class="card-body">
+                                                <h5 class="card-title"> Hebatology</h5>
+                                                <p class="card-text">Vesicula hepatologia, arbor biliaria, et pancreas.
+                                                </p>
+                                                <p class="card-text"><small class="text-muted">
+                                                        Hepatologists Lorem ipsum dolor sit amet consectetur adipisicing
+                                                        elit.
+                                                        Assumenda ab fugit porro est quibusdamipsum inventore iste
+                                                        culpa,
+                                                        suscipit debitis aliquid.</small>
+                                                </p>
+                                            </div>
+                                        </div>
+                                        <div class="col-12 col-sm-4">
+                                            <img src="./image/departments-3.jpg" class="img-fluid w-100"
+                                                alt="صورة لقسم العظام">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- بطاقة -->
+                            <div class="tab-pane fade" id="list-Pediatrics" role="tabpanel"
+                                aria-labelledby="list-neurology-list">
+                                <div class="card shadow-lg">
+                                    <div class="row g-0">
+                                        <div class="col-12 col-sm-8">
+                                            <div class="card-body">
+                                                <h5 class="card-title">Pediatrics</h5>
+                                                <p class="card-text">Information about neurology.</p>
+                                                <p class="card-text"><small class="text-muted">Details about neurology
+                                                        specialists.</small></p>
+                                            </div>
+                                        </div>
+                                        <div class="col-12 col-sm-4"> <img src="./image/departments-4.jpg"
+                                                class="img-fluid w-100" alt="صورة لقسم الأعصاب">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- بطاقة -->
+                            <div class="tab-pane fade" id="list-Ophthalmologists" role="tabpanel"
+                                aria-labelledby="list-neurology-list">
+                                <div class="card shadow-lg">
+                                    <div class="row g-0">
+                                        <div class="col-12 col-sm-8">
+                                            <div class="card-body">
+                                                <h5 class="card-title">Pediatrics</h5>
+                                                <p class="card-text">Information about neurology.</p>
+                                                <p class="card-text"><small class="text-muted">Details about neurology
+                                                        specialists.</small></p>
+                                            </div>
+                                        </div>
+                                        <div class="col-12 col-sm-4"> <img src="./image/departments-4.jpg"
+                                                class="img-fluid w-100" alt="صورة لقسم الأعصاب">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--  -->
+        <!--  -->
+        <div class="bd-teal-100">
+            <div class="text-center py-5">
+                <h2>
+                    Frequenter Interrogata
+
+                </h2>
+                <div class="d-flex justify-content-center  align-items-center ">
+                    <div class="border-bottom  border-success border-3   py-2 w-25 "> </div>
+                </div>
+                <p class="pt-3">Necessitatibus eius consequatur ex aliquid fuga eum quidem sint consectetur velit
+                </p>
+            </div>
+            <div class="w-100 ms-auto text-center px-5 mx-5">
+                <div class=" py-2 "> <select class="form-select shadow-sm" aria-label="Default select">
+                        <option selected="">Non consectetur a erat nam at lectus duis ?
+                        </option>
+                        <option value="1">One</option>
+                        <option value="2">Two</option>
+                        <option value="3">Three</option>
+                    </select></div>
+
+                <div class=" py-2"> <select class="form-select shadow-sm" aria-label="Default select">
+                        <option selected="">Feugiat scelerisque varius morbi enim nunc faucibus ?
+                        </option>
+                        <option value="1">One</option>
+                        <option value="2">Two</option>
+                        <option value="3">Three</option>
+                    </select></div>
+                <div class=" py-2"> <select class="form-select shadow-sm" aria-label="Default select">
+                        <option selected="">Dolor sit amet consectetur adipiscing elit pellentesque ?</option>
+                        <option value="1">One</option>
+                        <option value="2">Two</option>
+                        <option value="3">Three</option>
+                    </select></div>
+            </div>
+        </div>
+
+        <div class="py-2">
+            <div class="text-center py-3">
+                <h2>Contact </h2>
+                <div class="d-flex justify-content-center  align-items-center ">
+                    <div class="border-bottom  border-success border-3   py-2 w-25 "> </div>
+                </div>
+                <p class="py-2">
+                    Necessitatibus eius consequatur ex ailquid fuga eum quidem sint consectetur velit
+                </p>
+
+
+            </div>
+            <div class="text-center px-5">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3247.0001592752774!2d35.799031375243494!3d35.52899373832265!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1526ada7c38f8879%3A0x5f66e4e99dbb7a47!2sfocal%20X%20agency!5e0!3m2!1sen!2s!4v1727988113278!5m2!1sen!2s"
+                    class="w-100 " height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+
+        </div>
+
+
+        <div class="col-lg-4 my-2 shadow-lg ms-5">
+            <div class="card-body">
+                <div class="card-body text-center ">
+
+                    <div class=" ">
+                        <div class="   ">
+
+                            <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="rgb(70, 180, 173)"
+                                class="bi bi-house-check-fill rounded-circle  border  border-dotted  py-2 px-2"
+                                viewBox="0 0 16 16">
+                                <path
+                                    d="M8.707 1.5a1 1 0 0 0-1.414 0L.646 8.146a.5.5 0 0 0 .708.708L8 2.207l6.646 6.647a.5.5 0 0 0 .708-.708L13 5.793V2.5a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5v1.293z" />
+                                <path d="m8 3.293 4.712 4.712A4.5 4.5 0 0 0 8.758 15H3.5A1.5 1.5 0 0 1 2 13.5V9.293z" />
+                                <path
+                                    d="M12.5 16a3.5 3.5 0 1 0 0-7 3.5 3.5 0 0 0 0 7m1.679-4.493-1.335 2.226a.75.75 0 0 1-1.174.144l-.774-.773a.5.5 0 0 1 .708-.707l.547.547 1.17-1.951a.5.5 0 1 1 .858.514" />
+                            </svg>
+                        </div>
+                    </div>
+                    <h5 class="card-title py-3">Our Address
+                    </h5>
+
+                    <a href="https://maps.app.goo.gl/8XGycWpzYdnTn2xi8" class="color-success"> View On Map </a>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+
+
+</body>
+
+</html>
